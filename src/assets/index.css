@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Inter", serif;
+    font-size: calc(10px + 0.33vw);
+    -webkit-font-smoothing: antialiased;
+    padding: 10vh 20vw;
+    color: #121314;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(54, 54, 54);
+    max-width: 28em;
+}
+
+.g-icon {
+    padding: 8px;
+    transition: scale 0.4s ease-in-out;
+    animation: MoveVert 10s ease-in-out infinite;
+}
+
+.b-icon {
+    padding: 8px;
+    font-size: 2em;
+    animation: MoveVert 10s ease-in-out infinite;
+}
+
+.move-up {
+    animation-delay: 0s;
+}
+
+.move-down {
+    animation-delay: 0.5s;
+}
+
+@keyframes MoveVert {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+}
+
+.g-icon {
+    font-size: 1.8em;
+}
+
+.b-icon:hover, .g-icon:hover {
+    scale: 1.2;
+}
+
+a {
+    color: #121314;
+    text-decoration: none;
+}
+
+::selection {
+    color: #FFFFFF;
+    background-color: rgb(93, 93, 93);
+}
+
