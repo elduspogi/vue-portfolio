@@ -83,3 +83,8 @@ a {
     background-color: rgb(93, 93, 93);
 }
 
+@media screen and (max-width: 425px) {
+    body {
+        padding: 10vh 10vw;
+    }
+}

@@ -11,7 +11,11 @@
         <font-awesome-icon :icon="['fab', 'github']" class="g-icon move-up" />
     </a>
 
+    <a href="https://linkedin.com/in/elduspogi">
+        <font-awesome-icon :icon="['fab', 'linkedin']" class="g-icon move-down" />
+    </a>
+
     <a href="mailto:alaizaaldus@gmail.com" target="_blank">
-        <font-awesome-icon :icon="['fas', 'envelope']" class="g-icon move-down" />
+        <font-awesome-icon :icon="['fas', 'envelope']" class="g-icon move-up" />
     </a>
 </template>
