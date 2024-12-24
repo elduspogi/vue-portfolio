@@ -26,8 +26,8 @@ const show = (component) => {
     
     <p class="animate-el">
         If you have the time, take a visit to my previous 
-        <span @click="show('Projects')">projects</span>
-        , or <span @click="show('GetInTouch')">get in touch</span> with me.
+        <span @click="show('Projects')">projects</span>, or 
+        <span @click="show('GetInTouch')">get in touch</span> with me.
     </p>
 
     <p class="animate-el">
