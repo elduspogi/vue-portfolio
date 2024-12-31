@@ -38,15 +38,13 @@ export default {
 .app {
   position: relative;
   overflow: hidden;
-  /* width: 100vw;
-  height: 100vh; */
 }
 
 .fireworks-bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 100%;
   height: 100%;
   z-index: -1;
 }
