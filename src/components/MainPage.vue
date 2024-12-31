@@ -94,6 +94,10 @@ p:nth-child(7).animate-el {
   animation-delay: 1.3s;
 }
 
+p:nth-child(8).animate-el {
+  animation-delay: 1.3s;
+}
+
 @keyframes fadeInBottom {
     0% {
         opacity: 0%;
