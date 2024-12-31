@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <div class="app">
+  <div id="app">
     <div ref="fireworksContainer" class="fireworks-bg" />
     <RouterView />
   </div>
@@ -38,18 +38,20 @@ export default {
 .app {
   position: relative;
   overflow: hidden;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .fireworks-bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 100%;
   z-index: -1;
 }
 
-#app > * {
+.app > * {
   position: relative;
   z-index: 1;
 }
