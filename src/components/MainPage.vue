@@ -17,7 +17,8 @@ const redirectToResume = () => {
 </script>
 
 <template>
-    <h1 class="animate-el">Hello (你好).</h1>
+    <!-- <h1 class="animate-el">Hello (你好).</h1> -->
+     <h1 class="animate-el">Happy New Year!</h1>
 
     <h2 class="animate-el">My name is Aldus Alaiza.</h2>
     
