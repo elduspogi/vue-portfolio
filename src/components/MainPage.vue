@@ -2,12 +2,17 @@
 import BadBoys from './BadBoys.vue'
 import GetInTouch from './GetInTouch.vue'
 import Projects from './ProjectsPage.vue'
+import Experience from './ExperiencePage.vue'
 import { ref } from 'vue'
 
 const active = ref(null);
-
+const resumePath = '/Aldus-Alaiza.pdf';
 const show = (component) => {
     active.value = active.value === component ? null : component;
+}
+
+const redirectToResume = () => {
+    window.open(`${resumePath}`, '_blank');
 }
 </script>
 
@@ -31,6 +36,10 @@ const show = (component) => {
     </p>
 
     <p class="animate-el">
+        Here's my <span @click="redirectToResume">resume</span> and <span @click="show('Experience')">work experience</span> for your reference.
+    </p>
+
+    <p class="animate-el">
         Trust me, I won't bite. Unless you're a fried chicken. :)
     </p>
 
@@ -39,6 +48,7 @@ const show = (component) => {
     <BadBoys v-if="active === 'BadBoys'"></BadBoys>
     <GetInTouch v-if="active === 'GetInTouch'"></GetInTouch>
     <Projects v-if="active === 'Projects'"></Projects>
+    <Experience v-if="active === 'Experience'"></Experience>
 </template>
 
 <style scoped>
@@ -95,7 +105,11 @@ p:nth-child(7).animate-el {
 }
 
 p:nth-child(8).animate-el {
-  animation-delay: 1.3s;
+  animation-delay: 1.5s;
+}
+
+p:nth-child(9).animate-el {
+  animation-delay: 1.7s;
 }
 
 @keyframes fadeInBottom {
