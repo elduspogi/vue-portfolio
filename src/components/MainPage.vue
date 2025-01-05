@@ -17,8 +17,7 @@ const redirectToResume = () => {
 </script>
 
 <template>
-    <!-- <h1 class="animate-el">Hello (你好).</h1> -->
-     <h1 class="animate-el">Happy New Year!</h1>
+    <h1 class="animate-el">Hello (你好).</h1>
 
     <h2 class="animate-el">My name is Aldus Alaiza.</h2>
     
@@ -107,10 +106,6 @@ p:nth-child(7).animate-el {
 
 p:nth-child(8).animate-el {
   animation-delay: 1.5s;
-}
-
-p:nth-child(9).animate-el {
-  animation-delay: 1.7s;
 }
 
 @keyframes fadeInBottom {
