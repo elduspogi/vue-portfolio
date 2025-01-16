@@ -22,7 +22,7 @@ const redirectToResume = () => {
     <h2 class="animate-el">My name is Aldus Alaiza.</h2>
     
     <p class="animate-el">
-        I am a software engineer currently based in Laguna, Philippines.
+        I am a software developer currently based in Laguna, Philippines.
     </p>
 
     <p class="animate-el">
