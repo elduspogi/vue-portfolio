@@ -9,11 +9,11 @@ export default {
                     description: 'Web-based Document Management System Integrating Optical Character Recognition', 
                     link: 'https://github.com/elduspogi/ocrvault.v2',
                     tech: [
-                        { name: 'HTML' },
-                        { name: 'CSS' },
-                        { name: 'JQuery' },
-                        { name: 'Django' },
-                        { name: 'MySQL' },
+                        { name: 'HTML', icon: ['fab', 'html5'] },
+                        { name: 'CSS', icon: ['fab', 'css3-alt'] },
+                        { name: 'JQuery', icon: ['fab', 'js-square'] },
+                        { name: 'Django', icon: ['fab', 'python'] },
+                        { name: 'MySQL', icon: ['fas', 'database'] },
                     ]
                 },
                 {   
@@ -22,11 +22,11 @@ export default {
                     description: 'E-commerce platform Using Chatbot for Virtual Assistance', 
                     link: 'https://github.com/elduspogi/deeco-electronics',
                     tech: [
-                        { name: 'HTML' },
-                        { name: 'CSS' },
-                        { name: 'JQuery' },
-                        { name: 'Django' },
-                        { name: 'MySQL' },
+												{ name: 'HTML', icon: ['fab', 'html5'] },
+                        { name: 'CSS', icon: ['fab', 'css3-alt'] },
+                        { name: 'JQuery', icon: ['fab', 'js-square'] },
+                        { name: 'Django', icon: ['fab', 'python'] },
+                        { name: 'MySQL', icon: ['fas', 'database'] },
                     ]
                 },
                 {   
@@ -35,7 +35,7 @@ export default {
                     description: 'A Simple Snake Game using Python and Tkinter', 
                     link: 'https://github.com/elduspogi/snake-game',
                     tech: [
-                        { name: 'Python' }
+                        { name: 'Python', icon: ['fab', 'python'] }
                     ]
                 },
                 {
@@ -44,7 +44,8 @@ export default {
                     description: 'A Simple Minimalist Portfolio',
                     link: '',
                     tech: [
-                        { name: 'Vue' }
+                        { name: 'Vue', icon: ['fab', 'vuejs'] },
+                        { name: 'Javascript', icon: ['fab', 'js-square'] }
                     ]
                 }
             ]
@@ -66,7 +67,10 @@ export default {
 
                     <div class="tech-container">
                         <div v-for="(tech, techIndex) in project.tech" :key="techIndex" class="tech-item">
-                            <p class="tech-name">{{  tech.name }}</p>
+                            <p class="tech-name">
+															<font-awesome-icon :icon="tech.icon" />
+															{{ tech.name }}
+														</p>
                         </div>
                     </div>
                 </div>

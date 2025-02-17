@@ -22,11 +22,11 @@ const redirectToResume = () => {
     <h2 class="animate-el">My name is Aldus Alaiza.</h2>
     
     <p class="animate-el">
-        I am a software developer currently based in Laguna, Philippines.
+        I am a software engineer currently based in Laguna, Philippines.
     </p>
 
     <p class="animate-el">
-        Building efficient, scalable, and user-friendly web applications since 2023. Creating numerous projects using this <span @click="show('BadBoys')">bad boys</span>.
+        Building efficient, scalable, user-friendly, and blazing-fast web applications since 2023. Creating numerous projects using this <span @click="show('BadBoys')">bad boys</span>.
     </p>
     
     <p class="animate-el">
