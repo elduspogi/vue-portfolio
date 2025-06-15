@@ -3,6 +3,12 @@ export default {
     data() {
         return {
             experiences: [
+								{
+                    company: "Cambridge University Press & Assessment",
+                    position: "Junior Software Engineer",
+                    acronym: 'CU',
+                    duration: 'June 2025 - Present',
+                },
                 {   
                     company: "Domino's Pizza",
                     position: "Shift Manager",
