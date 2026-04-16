@@ -1,12 +1,12 @@
 <script setup>
-import BadBoys from './BadBoys.vue'
-import GetInTouch from './GetInTouch.vue'
-import Projects from './ProjectsPage.vue'
-import Experience from './ExperiencePage.vue'
+import BadBoys from '@/components/BadBoys.vue'
+import GetInTouch from '@/components/GetInTouch.vue'
+import Projects from '@/components/Projects.vue'
+import Experience from '@/components/Experience.vue'
 import { ref } from 'vue'
 
 const active = ref(null);
-const resumePath = '/Aldus-Alaiza.pdf';
+const resumePath = '/aldus-alaiza.pdf';
 const show = (component) => {
     active.value = active.value === component ? null : component;
 }
@@ -26,7 +26,7 @@ const redirectToResume = () => {
     </p>
 
     <p class="animate-el">
-        Building efficient, scalable, user-friendly, and blazing-fast web applications since 2023. Creating numerous projects using this <span @click="show('BadBoys')">bad boys</span>.
+        Building efficient, scalable, user-friendly, and blazing-fast web applications since 2023. Creating numerous projects using these <span @click="show('BadBoys')">bad boys</span>.
     </p>
     
     <p class="animate-el">
@@ -52,6 +52,10 @@ const redirectToResume = () => {
 </template>
 
 <style scoped>
+span {
+    font-weight: 400;
+}
+
 span, .nav-link {
     cursor: pointer;
     position: relative;
