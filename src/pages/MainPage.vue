@@ -6,7 +6,7 @@ import Experience from '@/components/Experience.vue'
 import { ref } from 'vue'
 
 const active = ref(null);
-const resumePath = '/aldus-alaiza-cv.pdf';
+const resumePath = '/aldus-alaiza.pdf';
 const show = (component) => {
     active.value = active.value === component ? null : component;
 }
